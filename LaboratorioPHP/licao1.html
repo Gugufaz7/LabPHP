@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lição 1 - Introdução ao PHP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="gitperfil.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="h-left">
+            <a href="index.php"><img src="gitperfil.ico" alt="Ícone do Perfil"></a>
+        </div>
+        <div class="h-right">
+            <a href="index.php">Home</a>
+            <a href="#" id="licoes-link">Lições</a>
+            <div class="dropdown" id="licoes-dropdown">
+                <a href="licao1.html">Lição 1 - Introdução ao PHP</a>
+                <a href="licao2.html">Lição 2 - Sintaxe básica do PHP</a>
+                <a href="licao3.html">Lição 3 - Trabalhando com variáveis e tipos de dados</a>
+                <!-- Adicione mais lições conforme necessário -->
+            </div>
+            <a href="contactos.html">Contactos</a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Lição 1 - Introdução ao PHP</h1>
+        <p>PHP (Hypertext Preprocessor) é uma linguagem de script de código aberto amplamente utilizada, especialmente adequada para o desenvolvimento web e que pode ser embutida no HTML.</p>
+        
+        <h2>O que é PHP?</h2>
+        <p>PHP é uma linguagem de programação do lado do servidor que é usada para criar páginas web dinâmicas e interativas. Foi originalmente criada por Rasmus Lerdorf em 1994 e desde então evoluiu significativamente.</p>
+        
+        <h2>Características do PHP</h2>
+        <ul>
+            <li>Fácil de aprender e usar</li>
+            <li>Ampla compatibilidade com servidores web e sistemas operacionais</li>
+            <li>Suporte a uma ampla gama de bancos de dados</li>
+            <li>Comunidade ativa e grande quantidade de documentação</li>
+        </ul>
+        
+        <h2>Exemplo de Código PHP</h2>
+        <p>O exemplo a seguir mostra um simples script PHP que exibe "Olá, Mundo!" na tela:</p>
+        <pre><code>&lt;?php
+echo "Olá, Mundo!";
+?&gt;</code></pre>
+        
+        <h2>Como Executar PHP</h2>
+        <p>Para executar um script PHP, você precisa de um servidor web com suporte a PHP, como o Apache, e um navegador web. Você pode instalar um pacote como o XAMPP ou WAMP que inclui o Apache, PHP e MySQL.</p>
+        
+        <p>Salve o código acima em um arquivo com a extensão <code>.php</code> e coloque-o no diretório raiz do seu servidor web. Acesse o arquivo através do navegador para ver o resultado.</p>
+        
+        <h2>Mais Exemplos de Código</h2>
+        <p>Aqui estão mais alguns exemplos de código PHP para você experimentar:</p>
+        
+        <h3>Variáveis e Tipos de Dados</h3>
+        <pre><code>&lt;?php
+$nome = "Augusto";
+$idade = 30;
+$altura = 1.75;
+$casado = true;
+
+echo "Nome: $nome\n";
+echo "Idade: $idade\n";
+echo "Altura: $altura\n";
+echo "Casado: " . ($casado ? 'Sim' : 'Não') . "\n";
+?&gt;</code></pre>
+        
+        <h3>Estruturas de Controle</h3>
+        <pre><code>&lt;?php
+$nota = 85;
+
+if ($nota >= 90) {
+    echo "Aprovado com louvor!";
+} elseif ($nota >= 60) {
+    echo "Aprovado";
+} else {
+    echo "Reprovado";
+}
+?&gt;</code></pre>
+        
+        <h2>Conclusão</h2>
+        <p>PHP é uma linguagem poderosa e flexível que pode ser usada para criar uma ampla variedade de aplicações web. Com sua sintaxe simples e ampla compatibilidade, é uma excelente escolha para desenvolvedores de todos os níveis.</p>
+    </div>
+    <footer>
+        <p>&copy; Augusto Dala Faztudo</p>
+    </footer>
+    <script src="scripts.js">
+    </script>
+</body>
+</html>

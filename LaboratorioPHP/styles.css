@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+header .h-left img {
+    height: 40px;
+}
+header .h-right {
+    position: relative;
+}
+header .h-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+header .h-right a:hover {
+    background: rgba(205, 211, 100, 0.692);
+    transition: 0.3s;
+}
+header .h-right .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+header .h-right .dropdown a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+header .h-right .dropdown a:hover {
+    background-color: #f4f4f4;
+}
+.content {
+    display: flex;
+    padding: 20px;
+}
+.left, .right {
+    padding: 20px;
+}
+.left {
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.right {
+    width: 30%;
+    background-color: #e2e2e2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.lesson {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.lesson h2 {
+    margin: 0 0 10px 0;
+}
+.lesson p {
+    margin: 0;
+}
+.lesson a {
+    text-decoration: none;
+    color: #007BFF;
+}
+h1, h2 {
+    color: #333;
+}
+p {
+    color: #555;
+}
+a{
+    text-decoration: none;
+}
+a h2{
+    color: rgb(205,211,100);
+}
+code {
+    background-color: #e2e2e2;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+pre {
+    background-color: #e2e2e2;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+form{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-left: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form input[type="text"], form input[type="email"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+.dados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333ee;
+    color: rgb(205,211,100);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+}
+.clock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: #333333ee;
+    color: rgb(205,211,100);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 125px;
+    transition: 0.3s;
+}
+tr {
+    background-color: #f4f4f4;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #000;
+}
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactos2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact-frame {
+    background-color: #dddddd55;
+    font-size: 16pt;
+    padding: 20px 30px;
+    margin: 25px;
+    border-radius: 15px 10px 10px 15px;
+    box-shadow: 0px 0px 0.5px 1px;
+    width: 15vw;
+    height: 15vh;
+}
+.contact-frame a {
+    color: #000;
+}
+footer {
+    background-color: #e2e2e236;
+    border: 10rem 0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    border-top: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    body{
+        max-width: 100%;
+    }
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 90%;
+    }
+}
